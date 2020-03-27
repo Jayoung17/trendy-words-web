@@ -10,11 +10,10 @@
 <html>
 <head>
     <title>Trendy Words !</title>
-    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <jsp:include page="menu.jsp"></jsp:include>
-
     <div id="header">
         <h1>Trendy Words</h1>
         <h3>시사 단어</h3>
@@ -24,10 +23,11 @@
         </form>
     </div>
     <div id="content">
-        <jsp:include page="submenu.jsp"></jsp:include>
+    <jsp:include page="submenu.jsp"></jsp:include>
+
         <div class="words-box">
-<%--    일별로 단어 정렬 가능하게하기 --%>
-<%--    순위 숫자 매기기 --%>
+            <%--    일별로 단어 정렬 가능하게하기 --%>
+            <%--    순위 숫자 매기기 --%>
             <c:forEach items="${tw}" var="tw" varStatus="i">
                 <div class='word' id='word-${i}' onmouseover="mouse_event(this)" onmouseout="mouse_event(this)" onclick="location.href = '/learn/${tw.word}'">
                     <div class='word-eng'>
