@@ -4,7 +4,6 @@ import com.yujachan.trendywords.DbClass.Users;
 import com.yujachan.trendywords.DbTemplate.UsersTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -24,4 +23,8 @@ public class UsersController {
         return "index";
     }
 
+    @GetMapping("/login")
+    public String logIn() {
+        return "login";
+    }
 }
