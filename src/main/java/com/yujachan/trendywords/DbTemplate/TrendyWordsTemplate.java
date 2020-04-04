@@ -18,8 +18,8 @@ public class TrendyWordsTemplate {
         mongoTemplate.dropCollection(TrendyWords.class);
     }
 
-    public void save(TrendyWords person) {
-        mongoTemplate.save(person);
+    public void save(TrendyWords trendywords) {
+        mongoTemplate.save(trendywords);
     }
 
     public List<TrendyWords> findAll() {

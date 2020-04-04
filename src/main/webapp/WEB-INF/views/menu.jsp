@@ -18,6 +18,7 @@
             <li><a class="menuLink" href="/about">About</a></li>
             <li><a class="menuLink" href="/trendy-words">Trendy Words</a></li>
             <li><a class="menuLink" href="/difficult-words">Difficult Words</a></li>
+            <li><a class="menuLink" href="/login">Sign In / Sign Up</a></li>
         </ul>
     </nav>
 </body>
